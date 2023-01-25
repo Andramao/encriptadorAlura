@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Encriptador Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+	<script type="text/javascript" src="script.js"></script>
+    
+
+
+</head>
+<body>
+    <header> 
+        <img class="logo" src="logo.png" alt="logo alura app encriptar">
+        <h1>Encriptador Alura</h1>
+    </header>
+    <main>
+        
+        <section class="section_1">
+            <textarea class="textArea" id="text_Encriptado" placeholder="Escribe tu texto aquí"></textarea>
+            <div>
+				<h5 class="info">¡Solo permite el ingreso de letras minúsculas y sin acentos especiales!</h5>
+			</div>
+            <div class="contenedor_botones">
+                <button class="boton_encriptar" id="boton_encriptado">Encriptar</button>
+
+				<button class="boton_desencriptar" id="boton_desencriptado">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="section_2">
+            <textarea class="textarea_2" id="text_Desencriptado"></textarea>
+
+            <div id="contenedores_sect_2">
+                <div class="contenedor_imagen">
+                    <img src="Muñeco.png" alt="Muñeco">
+                </div>
+                <div class="contenedor_subtitulo">
+                    <h3>No se encontro ningun mensaje</h3>
+                </div>
+                <div class="contenedor_parrafo">
+                    <p>Escribe el texto que desea encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="boton_copiar">Copiar</button>
+            </div>
+           
+        </section>
+        
+    </main>
+   
+    
+</body>
+
+><script>
+    var boton_encriptar = document.querySelector("#boton_encriptado");
+    boton_encriptar.onclick = encriptarTexto;
+
+    var boton_desencriptar = document.querySelector("#boton_desencriptado");
+    boton_desencriptar.onclick = desencriptarTexto;
+
+    var boton_copiar = document.querySelector("#boton_copiar");
+    boton_copiar.onclick = copiarTexto;
+</script>
+
+<footer>
+    &copy By Andramao
+</footer>
+</html>
